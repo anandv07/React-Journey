@@ -1,0 +1,14 @@
+--react js is a javascript library for building large scale applications.
+
+--react can also be used in smaller parts of the javascript code which does not full fledgely uses react 
+library.
+
+--react.createElement -- takes three arguments 
+        1) tag (type)
+        2) arguments ()
+        3) children (props)
+
+--reactDOM.createRoot() -- creates react root for the provided argument
+
+--  .render() -- render the object created with createElement method as html elements.
+
