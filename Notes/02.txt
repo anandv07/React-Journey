@@ -40,3 +40,6 @@ parcel uses:
     Parcel Docs:  https://parceljs.org/
 
     browserlist --> to support new features in old and all browser versions
+
+    dist folder is where the build packages will be available 
+    .parcel-cache is where cache of build package will be available
