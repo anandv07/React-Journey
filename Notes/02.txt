@@ -1,0 +1,42 @@
+--npm is a package manager for javascript
+
+-- npm init --> to create a package.json file.
+
+--package.json file is the configuration file for the npm.
+
+-- Bundlers are needed to bundle or package the application as a whole
+popular bundlers are webpack , parcel etc.
+
+-- npm install <package_name> --> to install any package with npm
+   npm install -D <package_name> --> to install dev dependency
+
+-- caret(^) in package dependency --> will automatically upgrade to minor version
+    without upgrading to major version (recommended)
+
+-- tilde (~) -- will automatically upgrade to major version
+    without upgrading to minor versions
+
+
+-- package-lock.json -->
+
+-- transitive dependency --> dependency needed for another dependency to work.
+
+parcel uses:
+    - dev build , local server
+    - Hot Module Replacement(automatically reloading)
+    - parcel uses File Watching Algorithm for HMR(written in c++)
+    - Faster Builds because parcel uses caching
+    - Helps in image optimization
+    - Minification of files and compressing
+    - Bundling
+    - consistent hashing
+    - code splitting
+    - Differential Bundling (support of old browsers)
+    - Diagnostic and error handling
+    - supports HTTPS
+    - supports Tree Shaking (remove unused code)
+    - supports different dev and prod bundles  (npx parcel build)
+
+    Parcel Docs:  https://parceljs.org/
+
+    browserlist --> to support new features in old and all browser versions
