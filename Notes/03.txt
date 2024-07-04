@@ -1,0 +1,25 @@
+Babel:
+
+Babel is js compiler for transpiling the jsx code to the javascript code
+
+When parcel package is added , babel also added as dependent package
+
+jsx --> a way to write html like syntax with javascript
+
+Writing a single line jsx doesn't requires any additional parenthesis
+But multiline jsx generally needs to be enclosed within the parenthesis ()
+
+
+React Components:
+
+--> independent and reusable piece of code
+--> Comes with two types: Class and Functional component
+--> All Components should start with Capital Letter
+
+Functional Component:
+
+--> Works like a normal javascript function , but returns jsx
+
+Component Composition --> having components inside other components (composing)
+
+
