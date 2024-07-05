@@ -12,6 +12,7 @@ const jsxheading = <h1 id="heading">
 const HeadingComponent = () =>{
     return (
         <>
+        {jsxheading}
         <Title/>
         <h1>Inside Heading Component</h1>
         </>

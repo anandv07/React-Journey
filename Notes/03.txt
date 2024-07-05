@@ -23,3 +23,7 @@ Functional Component:
 Component Composition --> having components inside other components (composing)
 
 
+To write javascript inside jsx, wrap it with curly braces {}
+
+JSX prevents cross site scripting*
+
