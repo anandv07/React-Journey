@@ -57,15 +57,12 @@
     margin-top:-3px;
   }
 
-.food-time {
+
+
+.food-time, .foodcost-two,.food-rating {
     color: #777;
     margin: 10px 0;
   }
-
-.food-rating {
-    color: #777;
-    margin: 10px 0;
-}
 
 .restaurant-card:hover {
     cursor: pointer;
