@@ -536,16 +536,23 @@ const Header = () => {
 
 const RestaurantCard = (props) => {
     const {restaurantObj} = props;
-    console.log(restaurantObj.info.name);
+    const {
+      name,
+      cuisines,
+      costForTwo,
+      sla:{deliveryTime},
+      avgRating
+    } = restaurantObj?.info
+
     return(
         <div className="restaurant-card">
             <div className="restaurant-info">
             <img className = "restaurant-image" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+restaurantObj.info.cloudinaryImageId}/>
-            <h3 className="restaurant-heading">{restaurantObj.info.name}</h3>
-            <h4 className="food-description">{restaurantObj.info.cuisines.join(",")}</h4>
-            <h4 className="foodcost-two">{restaurantObj.info.costForTwo}</h4>
-            <h4 className="food-time">deliveryTime: {restaurantObj.info.sla.deliveryTime}</h4>
-            <h4 className="food-rating">rating: {restaurantObj.info.avgRating}</h4>
+            <h3 className="restaurant-heading">{name}</h3>
+            <h4 className="food-description">{cuisines.join(",")}</h4>
+            <h4 className="foodcost-two">{costForTwo}</h4>
+            <h4 className="food-time">deliveryTime: {deliveryTime}</h4>
+            <h4 className="food-rating">rating: {avgRating}</h4>
             </div>
         </div>
     );
@@ -558,24 +565,12 @@ const Body = () => {
             Search
         </div>
         <div className="restaurant-container">
-            <RestaurantCard
-                restaurantObj = {restaurantObj[0]}
-                />
-            <RestaurantCard
-                 restaurantObj = {restaurantObj[1]}
-                 />
-            <RestaurantCard
-                 restaurantObj = {restaurantObj[2]}
-                 />
-            <RestaurantCard
-                 restaurantObj = {restaurantObj[3]}
-                 />
-            <RestaurantCard
-                 restaurantObj = {restaurantObj[4]}
-                 />
-            <RestaurantCard
-                 restaurantObj = {restaurantObj[5]}
-                 />
+            {
+              restaurantObj.map((restaurant) => 
+                     <RestaurantCard key = {restaurant.info.id}
+                     restaurantObj = {restaurant}/>
+              )
+            }
                 
         </div>
 

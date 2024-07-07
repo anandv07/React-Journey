@@ -21,4 +21,8 @@ Props :
     It is like passing an argument to the normal JS function, but with react component
     The props passed will be get as an object by the component
 
+When having a list of values , use JS map function to loop overit and give to the component
 
+key prop is react is neccessary to uniquely identify the a component
+
+We can give index value as key in react, but not recommended as per react docs.
